@@ -1,22 +1,20 @@
-// Imports: MongoDB Models/Schema
-
 // Imports: Node Fetch
 const fetch = require('node-fetch');
 
-// Imports: apiURL
-const baseURL = `https://swapi.co/api/`;
+// Imports: API URL
+const apiURL = `http://pokeapi.co/api/v2/`;
 
 
 // GraphQL: Resolvers
 const RESOLVERS = {
-  // Query: {
-  //   person: (parent, args) => {
-  //     const { id } = args // Remove it and make it args.id
-  //     return fetch(`${baseURL}/people/${id}`).then(res => res.json())
-  //   }
-  // }
+  Query: {
+    getPokemon: async (parent, args) => {
+      const response = await 
+      fetch(`http://pokeapi.co/api/v2/pokemon/${args.id}`);
+      return response.json();
+    }
+  }
 };
-
 
 // Exports
 export default RESOLVERS;

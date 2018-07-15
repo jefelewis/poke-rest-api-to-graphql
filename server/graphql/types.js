@@ -1,39 +1,39 @@
 // GraphQL: TypeDefs
 const TYPEDEFS = `
   type Query {
-    film(id: ID): Film
-    films: [Film]
-    person(id: ID): Person
-    persons: [Person]
-    planet(id: ID): Planet
-    planets: [Planet]
-    species(id: ID): Species
-    specieses: [Species]
-    starship(id: ID): Starship
-    starships: [Starship]
-    vehicle(id: ID): Vehicle
-    vehicles: [Vehicle]
+    getPokemon(id: Int!): Pokemon
   }
 
+  type Pokemon {
+    id: Int
+    name: String
+    height: Int
+    abilities: [AbilityObj]
+    stats: [StatObj]
+  }
 
-  type Film {
-    id: ID!
-    title: String!
-    episode_id: Int!
-    opening_crawl: String
-    director: String
-    producer: String
-    release_date: String
-    species: [Species]
-    starships: [Starship]
-    vehicles: [Vehicle]
-    characters: [Person]
-    planets: [Planet]
+  type AbilityObj {
+    slot: Int
+    is_hidden: Boolean
+    ability: Ability
+  }
+
+  type Ability {
+    name: String
     url: String
-    created: String
-    edited: String
   }
-`
+
+  type StatObj {
+    effort: Int
+    base_stat: Int
+    stat: Stat
+  }
+
+  type Stat {
+    name: String
+    url: String
+  }
+`;
 
 
 // Exports
