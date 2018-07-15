@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
-    "server": "babel-node ./server/server.js",
+    "server": "nodemon --exec babel-node ./server/server.js",
     "build": "webpack --mode production",
     "test": "jest"
   },
@@ -46,6 +46,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
+    "babel-watch": "^2.0.7",
     "css-loader": "^1.0.0",
     "enzyme": "^3.3.0",
     "file-loader": "^1.1.11",
