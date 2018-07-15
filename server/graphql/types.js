@@ -2,6 +2,7 @@
 const TYPEDEFS = `
   type Query {
     getPokemon(id: Int!): Pokemon
+    getAllPokemon: Pokemon
   }
 
   type Pokemon {
