@@ -1,8 +1,20 @@
 // GraphQL: TypeDefs
 const TYPEDEFS = `
   type Query {
-    getPokemon(id: Int!): Pokemon
-    getAllPokemon: Pokemon
+    getPokemonByID(id: Int!): Pokemon
+    getAllPokemon: AllPokemon
+  }
+
+  type AllPokemon {
+    count: Int
+    previous: String
+    results: [AllPokemonElement]
+    next: String
+  }
+
+  type AllPokemonElement {
+    url: String
+    name: String
   }
 
   type Pokemon {
