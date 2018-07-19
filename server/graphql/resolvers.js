@@ -1,19 +1,17 @@
 // Imports: Node Fetch
-const fetch = require('node-fetch');
+import axios from 'axios';
 
 
 // GraphQL: Resolvers
 const RESOLVERS = {
   Query: {
-    getPokemonByID: async (parent, args) => {
-      const response = await 
-      fetch(`http://pokeapi.co/api/v2/pokemon/${args.id}`);
-      return response.json();
+    getPokemonByID: (parent, args) => {
+      return axios.get(`http://pokeapi.co/api/v2/pokemon/${args.id}`)
+      .then(response => response.data)
     },
-    getAllPokemon: async (parent, args) => {
-      const response = await 
-      fetch(`https://pokeapi.co/api/v2/pokemon/?limit=20`);
-      return response.json();
+    getAllPokemon:  (parent, args) => {
+      return axios.get(`https://pokeapi.co/api/v2/pokemon/?limit=20`)
+      .then(response => response.data)
     }
   }
 };
