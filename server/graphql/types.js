@@ -1,7 +1,12 @@
+// Imports: GraphQL
+import { gql } from 'apollo-server-express';
+
+
 // GraphQL: TypeDefs
-const TYPEDEFS = `
+const TYPEDEFS = gql`
+
   type Query {
-    getPokemonByID(id: Int!): Pokemon
+    getPokemonByID(id: Int): Pokemon
     getAllPokemon: AllPokemon
   }
 

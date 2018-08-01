@@ -22,5 +22,6 @@ const RESOLVERS = {
   }
 };
 
+
 // Exports
 export default RESOLVERS;
