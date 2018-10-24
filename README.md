@@ -25,7 +25,7 @@ http://localhost:4000/graphql
 ```
 
 ## Example Queries
-**Get Pokemon by ID:**
+**Get Pokemon By ID:**
 ```
 {
   getPokemonById(id: 1) {
