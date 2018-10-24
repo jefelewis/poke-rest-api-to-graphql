@@ -9,7 +9,7 @@ let limit = 20;
 // GraphQL: Resolvers
 const RESOLVERS = {
   Query: {
-    getPokemonByID: (parent, args) => {
+    getPokemonById: (parent, args) => {
       return axios.get(`http://pokeapi.co/api/v2/pokemon/${args.id}`)
       .then(response => response.data)
       .catch((error) => console.log(error))
