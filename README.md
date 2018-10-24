@@ -72,3 +72,15 @@ Get Pokemon by ID #1:
   }
 }
 ```
+
+Get All Pokemon:
+```
+{
+	getAllPokemon() {
+    results {
+      name
+      url
+    }
+  }
+}
+```
