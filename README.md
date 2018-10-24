@@ -33,7 +33,7 @@ http://localhost:4000/graphql
     name
     height
   	is_default
-		order
+    order
     weight
     abilities {
       slot
