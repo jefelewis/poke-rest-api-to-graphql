@@ -1,10 +1,5 @@
-// Imports: Node Fetch
+// Imports: Dependencies
 import axios from 'axios';
-
-
-// Query Parameters
-let limit = 20;
-
 
 // GraphQL: Resolvers
 const RESOLVERS = {
@@ -21,7 +16,6 @@ const RESOLVERS = {
     }
   }
 };
-
 
 // Exports
 export default RESOLVERS;

@@ -1,4 +1,4 @@
-// Imports: GraphQL
+// Imports: Dependencies
 import { gql } from 'apollo-server-express';
 
 
@@ -116,7 +116,6 @@ const TYPEDEFS = gql`
     url: String
   }
 `;
-
 
 // Exports
 export default TYPEDEFS;
