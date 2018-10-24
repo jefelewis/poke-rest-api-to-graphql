@@ -76,7 +76,7 @@ http://localhost:4000/graphql
 **Get All Pokemon:**
 ```
 {
-	getAllPokemon() {
+  getAllPokemon() {
     results {
       name
       url
