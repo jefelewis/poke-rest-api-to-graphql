@@ -32,7 +32,7 @@ http://localhost:4000/graphql
     id
     name
     height
-  	is_default
+    is_default
     order
     weight
     abilities {
