@@ -15,7 +15,7 @@ const RESOLVERS = {
       .catch((error) => console.log(error))
     },
     getAllPokemon:  (parent, args) => {
-      return axios.get(`https://pokeapi.co/api/v2/pokemon/?limit=${limit}?offset=${offset}`)
+      return axios.get(`https://pokeapi.co/api/v2/pokemon/`)
       .then(response => response.data)
       .catch((error) => console.log(error))
     }
