@@ -4,9 +4,8 @@ A GraphQL version of the popular Pokémon REST API.
 ## Built With
 * [Express](https://expressjs.com) - Web framework
 * [GraphQL](https://graphql.org) - Query Language
-* [Apollo](https://www.apollographql.com/docs/apollo-server) - GraphQL Server
+* [Apollo Server 2](https://www.apollographql.com/docs/apollo-server) - GraphQL Server
 * [Babel](https://babeljs.io) - Transpiler/Transcompiler
-* [Webpack](https://webpack.js.org) - JavaScript Module Bundler
 
 ## Getting Started
 Install Dependencies:
@@ -19,7 +18,7 @@ Start the Server:
 npm run server
 ```
 
-Execute GraphQL Queries Here:
+Execute GraphQL Queries Here (Automatically Opens When Server Starts):
 ```
 http://localhost:4000/graphql
 ```
@@ -28,7 +27,7 @@ http://localhost:4000/graphql
 Get Pokemon by ID #1:
 ```
 {
-  getPokemon(id: 1) {
+  getPokemonById(id: 1) {
     id
     name
     height
