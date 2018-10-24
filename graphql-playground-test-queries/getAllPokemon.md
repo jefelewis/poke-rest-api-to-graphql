@@ -1,0 +1,8 @@
+{
+  getAllPokemon() {
+    results {
+      name
+      url
+    }
+  }
+}
