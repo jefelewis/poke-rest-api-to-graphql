@@ -1,5 +1,5 @@
 # GraphQL Pokemon API
-A GraphQL version of the popular Pokémon REST API.
+A GraphQL version of the popular [Pokémon REST API](https://pokeapi.co)
 
 ## Built With
 * [Node.js](https://nodejs.org/en) - JavaScript Runtime Environment
