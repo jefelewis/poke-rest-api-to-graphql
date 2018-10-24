@@ -1,32 +1,19 @@
-// Imports: Express
+// Imports: Dependencies
 import express from 'express';
-const APP = express();
-
-// Imports: GraphQL
 import SERVER from './graphql/schema.js';
-
-// Imports: Mongoose
-
-
-// Imports: Middleware
 import cors from 'cors';
+import opn from 'opn';
 
-
-// Database: Connection
-
+// Express App
+const APP = express();
 
 // Middleware: CORS
 APP.use(cors());
-
 
 // Middleware: GraphQL
 SERVER.applyMiddleware({
   app: APP
 });
-
-
-// Use: Static Files
-
 
 // Express: Port
 const PORT = 4000 || process.env;
@@ -37,6 +24,8 @@ APP.listen(PORT, () => {
   console.log(`http://localhost:${PORT}/graphql`);
 });
 
+// Open URL
+opn('http://localhost:4000/graphql');
 
 // Exports
 export default APP;
