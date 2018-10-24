@@ -7,7 +7,6 @@
     "test": "tests"
   },
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
     "server": "nodemon --exec babel-node ./server/server.js",
     "build": "webpack --mode production",
     "test": "jest"
@@ -29,11 +28,7 @@
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "graphql": "^0.13.2",
-    "graphql-tag": "^2.9.2",
-    "mongoose": "^5.2.6",
-    "react": "^16.4.1",
-    "react-apollo": "^2.1.9",
-    "react-dom": "^16.4.1"
+    "graphql-tag": "^2.9.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
