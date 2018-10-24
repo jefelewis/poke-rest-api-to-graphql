@@ -1,16 +1,10 @@
 {
   "name": "poke-rest-api-to-graphql",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
-  "main": "webpack.config.js",
-  "directories": {
-    "test": "tests"
-  },
   "scripts": {
     "start": "",
-    "server": "nodemon --exec babel-node ./server/server.js",
-    "build": "webpack --mode production",
-    "test": "jest"
+    "server": "nodemon --exec babel-node ./server/server.js"
   },
   "repository": {
     "type": "git",
