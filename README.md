@@ -8,23 +8,23 @@ A GraphQL version of the popular Pokémon REST API.
 * [Babel](https://babeljs.io) - Transpiler/Transcompiler
 
 ## Getting Started
-Install Dependencies:
+**Install Dependencies:**
 ```
 npm install
 ```
 
-Start the Server:
+**Start the Server:**
 ```
 npm run server
 ```
 
-Execute GraphQL Queries Here (Automatically Opens When Server Starts):
+**Execute GraphQL Queries Here (Automatically Opens When Server Starts):**
 ```
 http://localhost:4000/graphql
 ```
 
 ## Example Queries
-Get Pokemon by ID #1:
+**Get Pokemon by ID #1:**
 ```
 {
   getPokemonById(id: 1) {
@@ -73,7 +73,7 @@ Get Pokemon by ID #1:
 }
 ```
 
-Get All Pokemon:
+**Get All Pokemon:**
 ```
 {
 	getAllPokemon() {
