@@ -1,5 +1,5 @@
 {
-  getPokemon(id: 1) {
+  getPokemonById(id: 1) {
     id
     name
     height
