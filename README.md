@@ -14,12 +14,12 @@ A GraphQL version of the popular Pokémon REST API.
 npm install
 ```
 
-**Start the Server:**
+**Start Server:**
 ```
 npm run server
 ```
 
-**Execute GraphQL Queries Here (Automatically Opens When Server Starts):**
+**Execute GraphQL Queries Here (Browser Automatically Opens On Server Start):**
 ```
 http://localhost:4000/graphql
 ```
