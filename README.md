@@ -9,7 +9,12 @@ npm install
 
 Start the Server:
 ```
-npm start
+npm run server
+```
+
+Execute GraphQL Queries Here:
+```
+http://localhost:4000/graphql
 ```
 
 ## Built With
