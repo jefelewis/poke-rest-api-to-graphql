@@ -2,6 +2,7 @@
 A GraphQL version of the popular Pokémon REST API.
 
 ## Built With
+* [Node.js](https://nodejs.org/en) - JavaScript Runtime Environment
 * [Express](https://expressjs.com) - Web framework
 * [GraphQL](https://graphql.org) - Query Language
 * [Apollo Server 2](https://www.apollographql.com/docs/apollo-server) - GraphQL Server
