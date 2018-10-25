@@ -17,12 +17,12 @@
   },
   "homepage": "https://github.com/jefelewis/poke-rest-api-to-graphql#readme",
   "dependencies": {
-    "apollo-boost": "^0.1.12",
+    "apollo-boost": "^0.1.17",
     "apollo-server-express": "^2.1.0",
     "axios": "^0.18.0",
     "cors": "^2.8.4",
     "express": "^4.16.4",
-    "graphql": "^0.13.2",
+    "graphql": "^14.0.2",
     "graphql-tag": "^2.10.0",
     "opn": "^5.4.0"
   },
@@ -31,6 +31,6 @@
     "@babel/core": "^7.1.2",
     "@babel/node": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
-    "nodemon": "^1.18.3"
+    "nodemon": "^1.18.4"
   }
 }
