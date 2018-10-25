@@ -1,5 +1,15 @@
 # GraphQL Pokemon API
-A GraphQL version of the popular [Pokemon REST API](https://pokeapi.co)
+
+*  [About The Data](#about-the-data)
+*  [Built With](#built-with)
+*  [Getting Started](#getting-started)
+*  [GraphQL Query Examples](#graphql-query-examples)
+
+## About The Data
+The data comes directly from the popular [Pokemon REST API](https://pokeapi.co). The REST endpoints have been mapped as GraphQL types and resolvers. A summary of endpoints and documentation can be found here: https://pokeapi.co/docs/v2.html/#pokemon-section
+
+- No API Key required.
+- PokeAPI has a request limit of 100 requests per minute.
 
 ## Built With
 * [Node.js](https://nodejs.org/en) - JavaScript Runtime Environment
@@ -24,7 +34,7 @@ npm run server
 http://localhost:4000/graphql
 ```
 
-## Example Queries
+## GraphQL Query Examples
 **Get Pokemon By ID:**
 ```
 {
